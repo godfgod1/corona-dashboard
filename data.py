@@ -16,7 +16,7 @@ totals_df = totals_df.rename(columns={"index":"condition"})
 
 #! 국가별 확진자, 사망자, 완치자 수 현황(테이블과 지도)
 countries_df = daily_df[['Country_Region','Confirmed','Deaths','Recovered']]
-countries_df  = countries_df.groupby('Country_Region').sum().reset_index()
+countries_df  = countries_df.groupby('Country_Region').sum().sort_values(by="Confirmed",ascending=False).reset_index()
 
 #! 전세계 확진자 총합, 완치자 총합, 사망자총합(차트,국가별 필터링)
 def make_global_df():
