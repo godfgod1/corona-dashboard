@@ -18,6 +18,11 @@ totals_df = totals_df.rename(columns={"index":"condition"})
 countries_df = daily_df[['Country_Region','Confirmed','Deaths','Recovered']]
 countries_df  = countries_df.groupby('Country_Region').sum().sort_values(by="Confirmed",ascending=False).reset_index()
 
+
+
+dropdown_options = countries_df.sort_values("Country_Region").reset_index()
+dropdown_options = dropdown_options["Country_Region"]
+
 #! 전세계 확진자 총합, 완치자 총합, 사망자총합(차트,국가별 필터링)
 def make_global_df():
     def make_df(condition):
