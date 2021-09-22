@@ -12,8 +12,6 @@ from data import (
 )
 from builders import make_table
 
-
-
 stylesheets = [
     "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css",
     "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap",
