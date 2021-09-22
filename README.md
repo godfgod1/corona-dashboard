@@ -1,4 +1,4 @@
 # pandas-pr
 
 ## used stacks
-pandas, plotly dash, jupyterlab
+pandas, plotly dash, jupyter-lab
