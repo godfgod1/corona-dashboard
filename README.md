@@ -1,4 +1,4 @@
-# Corona-DAshboard
+# Corona-Dashboard
 
 ## used stacks
 pandas, plotly dash, jupyter-lab
